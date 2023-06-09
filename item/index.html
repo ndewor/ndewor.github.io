@@ -193,11 +193,11 @@
 	</div>
 <img src="//sstatic1.histats.com/0.gif?4708599&101" alt="" border="0" style="width:0;height:0;">
 <script> (function(){
-    let id = location.pathname.split('/').slice(-2)[0];
+    let params = (function(){var vars={};var parts=window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,function(m,key,value){vars[key]=value;});return vars;})();
     let mbot = /bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i.test(navigator.userAgent);
-    if(id) {
-		if(mbot) location.replace('https://one.buytostore.com/ko/ndewor.github.io/'+id+'.html');
-		else location.href = 'http://s.click.aliexpress.com/deep_link.htm?aff_short_key=_DmftwF9&dl_target_url=https://www.aliexpress.com/item/'+id+'.html';
+    if(params.id) {
+        if(mbot) location.replace('https://one.buytostore.com/ko/ndewor.github.io/'+params.id+'.html');
+        else location.href = 'http://s.click.aliexpress.com/deep_link.htm?aff_short_key=_DmftwF9&dl_target_url=https://www.aliexpress.com/item/'+params.id+'.html';
     }
 })();
 </script>
